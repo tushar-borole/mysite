@@ -1,30 +1,6 @@
 [{
-    "name": "Features",
+    "name": "My Profile",
     "icon": "",
     "href": "wer",
-    "childrenicon": []
-},
-{
-    "name": "Pricing",
-    "icon": "",
-    "href": "inapp.mailformat",
-    "childrenicon": []
-},
-{
-    "name": "Partners",
-    "icon": "",
-    "href": "inapp.mailformat",
-    "childrenicon": []
-},
-{
-    "name": "Help",
-    "icon": "",
-    "href": "inapp.mailformat",
-    "childrenicon": []
-},
-{
-    "name": "Login",
-    "icon": "",
-    "href": "inapp.mailformat",
     "childrenicon": []
 }]
