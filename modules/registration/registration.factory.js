@@ -1,7 +1,7 @@
 /**
  * @description Factory for registration Controller@abstract
  * @author Tushar Borole
- * @copyright 2014 © AeroD. All Rights Reserved.
+ * @copyright 2014 © MYSITE. All Rights Reserved.
  * @createDate 04/30/2015
  */ 
 
@@ -10,7 +10,7 @@
 (function () {
     'use strict';
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .factory('registrationFactory', registrationFactory);
 
     registrationFactory.$inject = ['Restangular','APP_URL','$enviornment'];

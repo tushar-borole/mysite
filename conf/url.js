@@ -4,7 +4,7 @@ Copyright:Seed Inc. 2014*/
 (function () {
     'use strict';
      angular
-        .module('AeroD').constant('APP_URL', {
+        .module('MYSITE').constant('APP_URL', {
         'development': {
             'register': 'reseller/account'
 

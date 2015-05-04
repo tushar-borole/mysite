@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .directive('ngSpinnerBar', ngSpinnerBar);
     ngSpinnerBar.$inject = ['$rootScope'];
 

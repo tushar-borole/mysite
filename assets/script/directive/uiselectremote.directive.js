@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .directive('uiSelectRemote', uiSelect);
 
     uiSelect.$inject = ['$parse', '$timeout'];

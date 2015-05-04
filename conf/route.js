@@ -3,7 +3,7 @@ Discription:It contain page route information
 Copyright:Seed Inc. 2014*/
 
 angular
-    .module('AeroD').config(['$stateProvider', '$locationProvider', '$urlRouterProvider', 'RouteHelpersProvider',
+    .module('MYSITE').config(['$stateProvider', '$locationProvider', '$urlRouterProvider', 'RouteHelpersProvider',
 function ($stateProvider, $locationProvider, $urlRouterProvider, helper) {
             'use strict';
 

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .directive('materialInput', materialInput);
 
     materialInput.$inject = ['$parse'];

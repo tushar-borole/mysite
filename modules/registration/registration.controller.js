@@ -2,7 +2,7 @@
  * @description Controller for registrationpage
  * @author Tushar Borole
  * @createDate 04/30/2015
- * @copyright 2014 © AeroD. All Rights Reserved.
+ * @copyright 2014 © MYSITE. All Rights Reserved.
  */
 
 
@@ -11,7 +11,7 @@
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .controller('RegistrationController', RegistrationController);
 
     RegistrationController.$inject = ['$rootScope', 'registrationFactory', 'errorService'];
@@ -40,7 +40,7 @@
             registration.registerUser = function (isValid) {
                 if (isValid) {
                     var registerData=angular.copy(registration.register);
-                    registerData.domain=  registerData.domain.concat('.aerod.com');
+                    registerData.domain=  registerData.domain.concat('.MYSITE.com');
                     registrationFactory.registerUser(registerData).then(function () {
                         errorService.showError('register.error.registersuccess', 'success');
                     }, function (data) {

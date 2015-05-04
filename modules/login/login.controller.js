@@ -7,7 +7,7 @@ Copyright:Seed Inc. 2014*/
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .controller('LoginController', LoginController);
 
     function LoginController(loginFactory) {

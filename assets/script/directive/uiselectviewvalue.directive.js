@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .directive('uiSelectViewValue', uiSelectViewValue);
 
     uiSelectViewValue.$inject = ['$parse','$timeout'];

@@ -1,6 +1,6 @@
 /**
  * @description Service to show errro message in application
- * @copyright 2014 © AeroD. All Rights Reserved.
+ * @copyright 2014 © MYSITE. All Rights Reserved.
  * @author Tushar Borole
  * @createDate 05/04/2015
  */ 
@@ -9,7 +9,7 @@
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .service('errorService', errorService);
 
     errorService.$inject = ['$http', '$translate', 'toastr'];

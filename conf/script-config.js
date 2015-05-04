@@ -5,7 +5,7 @@ Copyright:Seed Inc. 2014*/
     'use strict';
 
     angular
-        .module('AeroD').config(['$ocLazyLoadProvider', 'APP_REQUIRES', function ($ocLazyLoadProvider, APP_REQUIRES) {
+        .module('MYSITE').config(['$ocLazyLoadProvider', 'APP_REQUIRES', function ($ocLazyLoadProvider, APP_REQUIRES) {
             'use strict';
 
             // Lazy Load modules configuration

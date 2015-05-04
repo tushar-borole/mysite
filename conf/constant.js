@@ -11,7 +11,7 @@ Copyright:Seed Inc. 2014*/
 (function () {
     'use strict';
     angular
-        .module('AeroD').constant('APP_COLORS', {
+        .module('MYSITE').constant('APP_COLORS', {
             'primary': '#5d9cec',
             'success': '#27c24c',
             'info': '#23b7e5',

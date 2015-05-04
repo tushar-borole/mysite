@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .factory('loginFactory', loginFactory);
 
     loginFactory.$inject = ['Restangular','APP_URL','$enviornment'];

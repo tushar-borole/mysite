@@ -11,7 +11,7 @@ Copyright:Copyright:Seed Inc. 2014*/
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .controller('MainController', MainController);
 
     MainController.$inject = ['$http', '$scope'];

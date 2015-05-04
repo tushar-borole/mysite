@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('AeroD')
+        .module('MYSITE')
         .controller('login', login);
 
     login.$inject = ['$rootScope'];

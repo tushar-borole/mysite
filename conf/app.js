@@ -11,7 +11,7 @@ if (typeof $ === 'undefined') {
 // APP START
 // ----------------------------------- 
 
-var App = angular.module('AeroD', [
+var App = angular.module('MYSITE', [
     'ngRoute',
     'ngAnimate',
     'ngStorage',
