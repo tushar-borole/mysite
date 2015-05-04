@@ -1,0 +1,38 @@
+{
+    "scripts": [
+        {
+            "name": "icons",
+            "files": ["assets/vendor/modernizr/modernizr.js"]
+        }, {
+            "name": "modernizr",
+            "files": ["assets/vendor/fontawesome/css/font-awesome.min.css"]
+        }, {
+            "name": "sweetalert",
+            "files": ["assets/vendor/sweetalert/lib/sweet-alert.min.js", "assets/vendor/sweetalert/lib/sweet-alert.css", "assets/script/directive/sweetalert.directive.js"]
+        }, {
+            "name": "global",
+            "files": ["assets/vendor/fontawesome/css/font-awesome.min.css","assets/vendor/helper.css/dist/helper.min.css", "assets/vendor/simple-line-icons/css/simple-line-icons.css", "common/main.controller.js","assets/script/directive/ngspinnerbar.directive.js","assets/script/directive/material-input.directive.js"]
+        }
+    ],
+    "modules": [
+        {
+            "name": "toaster",
+            "files": ["assets/vendor/angular-toastr/dist/angular-toastr.min.js", "assets/vendor/angular-toastr/dist/angular-toastr.tpls.min.js","assets/vendor/angular-toastr/dist/angular-toastr.min.css"]
+         },
+        {
+            "name": "ui.select",
+            "files": ["assets/script/directive/select.js",
+                                                  "assets/css/select.min.css", "assets/script/directive/uiselectremote.directive.js", "assets/script/directive/uiselectviewvalue.directive.js"]
+         }
+    ],
+    "angularscript": [{
+            "name": "login",
+            "files": ["modules/login/login.controller.js", "modules/login/login.factory.js", "assets/script/directive/sweetalert.directive.js", "modules/login/login.css"]
+         },
+        {
+            "name": "registration",
+            "files": ["modules/registration/registration.controller.js","assets/script/service/error.service.js", "modules/registration/registration.factory.js", "modules/registration/registration.css"]
+         }
+    ]
+
+}

@@ -1,0 +1,26 @@
+{
+	"name": "helper.css",
+	"version": "0.1.1",
+	"homepage": "https://github.com/alexsoft/helper.css",
+	"authors": [
+		"Alex Plekhanov"
+	],
+	"description": "Various css helpers",
+	"main": "helper.css",
+	"keywords": [
+		"css",
+		"helper",
+		"helper.css",
+		"helpers",
+		"helpers.css"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"less",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

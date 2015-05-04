@@ -1,0 +1,140 @@
+<div class="registration portlet light animated slideInRight">
+    <div class="content">
+        <!-- BEGIN LOGIN FORM -->
+        <div class="row">
+            <div class="col-md-8">
+
+                <h1 class="form-section "><strong style="color: #BFBFBF;">Welcome to AeroD</strong></h1>
+
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                </p>
+
+            </div>
+            <div class="col-md-4">
+                <div class="portlet light">
+                    <form role="form" name="registerBasicForm" ng-if="!registration.submitted">
+                        <div class="form-body">
+                            <div class="form-group  form-md-line-input form-md-floating-label">
+                                <input ng-pattern="/^[a-zA-Z0-9\s.]*$/" validation-msg-pattern="Only alphabets, numbers, whitespace and full stop is allowed"  ng-maxlength="20" ng-model="registration.register.firstName" type="text" class="form-control isMaterial input-sm" id="form_control_1" required>
+                                <label for="form_control_1">First Name</label>
+                            </div>
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input ng-pattern="/^[a-zA-Z0-9\s.]*$/" validation-msg-pattern="Only alphabets, numbers, whitespace and full stop is allowed"  ng-maxlength="20" ng-model="registration.register.lastName" type="text" class="form-control isMaterial input-sm" id="form_control_2" required>
+                                <label for="form_control_2">Last Name</label>
+                            </div>
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input ng-pattern="/^[a-zA-Z0-9\s.]*$/" validation-msg-pattern="Only alphabets, numbers, whitespace and full stop is allowed"  ng-model="registration.register.title" type="text" class="form-control isMaterial input-sm" id="form_control_3">
+                                <label for="form_control_3">Title</label>
+                            </div>
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input validation-msg-pattern="Must start with a letter, contain letters, numbers and hypen only." ng-pattern="/^[A-z][A-z0-9_-]*$/" ng-maxlength="20" ng-model="registration.register.username" type="text" class="form-control isMaterial input-sm" id="form_control_4" required>
+                                <label for="form_control_4">User Name</label>
+                            </div>
+                            <div class="form-group form-md-line-input has-success form-md-floating-label">
+                                <div class="input-group left-addon">
+                                    <span class="input-group-addon">
+											<i class="fa fa-key"></i>
+											</span>
+                                    <input ng-pattern="/((?=.*\d)(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%]).{4,20})/"  ng-click="registration.showTooltip=true" validation-msg-pattern="Paasword does not match requirement" ng-model="registration.register.password" type="password" class="form-control isMaterial">
+                                    <label for="form_control_1">Password</label>
+                                    <span class="input-group-addon" popover-trigger="mouseenter" popover-template="'password.html'">
+        
+											<i class="fa fa-question-circle" >
+                                        </i>
+											</span>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                <input ng-fab-match="registration.register.password"  ng-model="registration.register.password2" type="password" class="form-control isMaterial input-sm" id="form_control_6" required>
+                                <label for="form_control_6">Confirm Password</label>
+                            </div>
+
+
+                            <div class="form-group form-md-line-input has-success form-md-floating-label">
+                                <div class="input-group left-addon">
+                                    <span class="input-group-addon">
+											<i class="fa fa-envelope-o"></i>
+											</span>
+                                    <input ng-maxlength="30" ng-model="registration.register.email" type="email" class="form-control isMaterial">
+                                    <label for="form_control_1">Email</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-md-line-input has-success form-md-floating-label">
+                                <div class="input-group left-addon">
+                                    <span class="input-group-addon">
+											<i class="fa fa-phone"></i>
+											</span>
+                                    <input ng-maxlength="15" ng-model="registration.register.phone" type="number" class="form-control isMaterial">
+                                    <label for="form_control_1">Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="form-group form-md-line-input">
+
+                                <div class="md-checkbox-list">
+                                    <div class="md-checkbox">
+                                        <input type="checkbox" ng-model="registration.register.isAgreed" id="checkbox30" class="md-check" required>
+                                        <label for="checkbox30">
+                                            <span></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span> I agree to AeroD's Terms and Conditions </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <button ng-click="registration.submitted=registerBasicForm.$valid" type="submit" class="btn btn-lg green m-icon-big center-block" href=""><span class="md-click-circle md-click-animate"></span> Submit
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                    <form role="form" name="registerForm" class="animated zoomIn" ng-if="registration.submitted">
+                        <div class="form-body">
+                            <h4><strong>Standard Setup</strong></h4>
+                            <div class="form-group form-md-line-input has-success  form-md-floating-label">
+                                <div class="input-group left-addon right-addon">
+                                    <span class="input-group-addon">http://</span>
+                                    <input type="text" ng-trim="false" ng-maxlength="10" ng-pattern="/^[a-zA-Z0-9]*$/" validation-msg-pattern="No Special Character are allowed"  ng-model="registration.register.domain"  class="form-control isMaterial" required>
+                                    <span class="input-group-addon">.aerod.com</span>
+                                    <label for="form_control_1"></label>
+                                </div>
+                            </div>
+
+                            <h4 class="mt60"><strong>Advanced Domain Setup</strong></h4>
+                            <span class="help-block">If you are NOT experienced with modifying your domain records, please use the Standard Domain Setup.</span>
+                            <div class="form-group form-md-line-input has-success  form-md-floating-label">
+                                <div class="input-group left-addon right-addon">
+                                    <span class="input-group-addon">http://</span>
+                                    <input type="text" class="form-control isMaterial">
+                                    <label for="form_control_1"></label>
+
+                                </div>
+                            </div>
+                            <span class="help-block">We will email you the details of how to set up CNAME and direct traffic to our servers</span>
+
+                            <button ng-click="registration.registerUser(registerForm.$valid)" type="submit" class="btn btn-lg green m-icon-big center-block" href=""><span class="md-click-circle md-click-animate"></span> Submit
+                            </button>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+ <script type="text/ng-template" id="password.html">
+    <div>Ensure password has one uppercase letters</div><div>Ensure password has one lower letters</div><div>Ensure password has one special case letter</div><div>Ensure password  has one digits</div><div>Ensure password has 8 minimum character and 20 maximum character </div>
+    </script>
