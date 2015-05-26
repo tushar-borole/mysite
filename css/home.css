@@ -58,3 +58,27 @@ canvas {
 .count-particles {
     border-radius: 0 0 3px 3px;
 }
+
+.panel-grid {
+  height: 60%;
+  left: 50%;
+  margin-left: -15%;
+  margin-top: -15%;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  width: 30%;
+  z-index: 2;
+}
+.gridster li{
+list-style: none
+}
+.gridster img{
+height: 100%;
+    width: 100%;
+}
+
+.gridster .aboutme{
+background-color: #2D8AF2;
+}
