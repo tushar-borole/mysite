@@ -61,14 +61,10 @@ canvas {
 
 .panel-grid {
   height: 60%;
-  left: 50%;
-  margin-left: -15%;
-  margin-top: -15%;
   padding: 10px;
-  position: fixed;
+  position: absolute;
   text-align: center;
-  top: 50%;
-  width: 30%;
+  width: 455px;
   z-index: 2;
 }
 .gridster li{

@@ -114,4 +114,16 @@ gridster = $(".gridster ul").gridster({
     widget_base_dimensions: [100, 100],
     widget_margins: [5, 5],
     helper: 'clone'
-}).data('gridster').width("auto");
+}).data('gridster')
+
+function resize() {
+    $(".panel-grid").position({
+        my: "center",
+        at: "center",
+        of: $(window)
+    });
+}
+resize()
+$(window).resize(function () {
+    resize()
+});
