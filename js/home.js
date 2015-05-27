@@ -109,12 +109,57 @@ particlesJS("particles-js", {
     "retina_detect": true
 });
 
+
+var preventClick = function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+};
+
 var gridster
 gridster = $(".gridster ul").gridster({
     widget_base_dimensions: [100, 100],
     widget_margins: [5, 5],
-    helper: 'clone'
+    helper: 'clone',
+    draggable: {
+        start: function (event, ui) {
+            // Stop event from propagating down the tree on the capture phase
+            ui.$player[0].addEventListener('click', preventClick, true);
+        },
+        stop: function (event, ui) {
+            var player = ui.$player;
+            setTimeout(function () {
+                player[0].removeEventListener('click', preventClick, true);
+            });
+        }
+    }
 }).data('gridster')
+
+$(".gridster ul li").click(function () {
+    
+    var attribute = $(this).attr("type")
+
+    if (attribute == 'github') {
+
+        window.open('https://github.com/tushariscoolster', '_blank');
+    }
+    if (attribute == 'facebook') {
+
+        window.open('https://www.facebook.com/borole', '_blank');
+    }
+    if (attribute == 'twitter') {
+
+        window.open('https://twitter.com/tushariscoolste', '_blank');
+    }
+     if (attribute == 'linkedin') {
+
+        window.open('https://www.linkedin.com/in/tusharborole', '_blank');
+    }
+    if (attribute == 'blog') {
+
+        window.open('http://nisostech.com/author/tushar', '_blank');
+    }
+});
+
 
 function resize() {
     $(".panel-grid").position({
