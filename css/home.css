@@ -6,7 +6,8 @@ body {
     overflow: hidden;
 }
 html, body {
-  overflow-x: hidden;
+ overflow:hidden;
+width:100%;
 }
 
 
