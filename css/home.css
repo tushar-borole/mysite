@@ -5,6 +5,12 @@ body {
     font: normal 75% Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
 
 canvas {
     display: block;

@@ -120,6 +120,9 @@ gridster = $(".gridster ul").gridster({
     widget_base_dimensions: [100, 100],
     widget_margins: [5, 5],
     helper: 'clone',
+    max_cols: 3,
+    max_rows: 3,
+    extra_rows: 0,
     draggable: {
         start: function (event, ui) {
             // Stop event from propagating down the tree on the capture phase
@@ -133,9 +136,10 @@ gridster = $(".gridster ul").gridster({
         }
     }
 }).data('gridster')
+$(".gridster").removeClass("hidden")
 
 $(".gridster ul li").click(function () {
-    
+
     var attribute = $(this).attr("type")
 
     if (attribute == 'github') {
@@ -150,7 +154,7 @@ $(".gridster ul li").click(function () {
 
         window.open('https://twitter.com/tushariscoolste', '_blank');
     }
-     if (attribute == 'linkedin') {
+    if (attribute == 'linkedin') {
 
         window.open('https://www.linkedin.com/in/tusharborole', '_blank');
     }
@@ -167,14 +171,21 @@ function resize() {
         at: "center",
         of: $(window)
     });
-    var windowHeight=$( window ).height();
-    var windowWidth=$( window ).width();
+    var windowHeight = $(window).height();
+    var windowWidth = $(window).width();
     $("body").height(windowHeight)
-     $("body").width(windowWidth)
-       $("#particles-js").height(windowHeight)
-     $("#particles-js").width(windowWidth)
+    $("body").width(windowWidth)
+    $("#particles-js").height(windowHeight)
+    $("#particles-js").width(windowWidth)
 }
 resize()
 $(window).resize(function () {
     resize()
+});
+
+$( ".profile-image" ).mouseenter(function() {
+  $(this).addClass( "jello" );
+});
+$( ".profile-image" ).mouseleave(function() {
+  $(this).removeClass( "jello" );
 });
