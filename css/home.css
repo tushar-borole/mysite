@@ -69,7 +69,7 @@ canvas {
 }
 .gridster li{
 list-style: none;
- cursor: all-scroll;
+ cursor: move;
 }
 .gridster img{
 height: 100%;
