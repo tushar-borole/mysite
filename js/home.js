@@ -167,6 +167,12 @@ function resize() {
         at: "center",
         of: $(window)
     });
+    var windowHeight=$( window ).height();
+    var windowWidth=$( window ).width();
+    $("body").height(windowHeight)
+     $("body").width(windowWidth)
+       $("#particles-js").height(windowHeight)
+     $("#particles-js").width(windowWidth)
 }
 resize()
 $(window).resize(function () {
