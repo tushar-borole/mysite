@@ -68,7 +68,8 @@ canvas {
   z-index: 2;
 }
 .gridster li{
-list-style: none
+list-style: none;
+ cursor: all-scroll;
 }
 .gridster img{
 height: 100%;
