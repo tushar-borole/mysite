@@ -77,6 +77,8 @@ canvas {
 .gridster li{
 list-style: none;
  cursor: move;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .gridster img{
 height: 100%;
