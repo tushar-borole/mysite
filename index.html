@@ -19,7 +19,30 @@
     <link rel="stylesheet" href="bower_components/hover/css/hover-min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/app.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    	<script id="shader-fs" type="x-shader/x-fragment">
+				#ifdef GL_ES
+				  precision highp float;
+				  #endif
+				  
+				 uniform vec4 color;
+				 
+    		void main(void) {
+    		 gl_FragColor = color;
+    		}
+		</script>
+		
+		<script id="shader-vs" type="x-shader/x-vertex">
+  			attribute vec3 vertexPosition;
+
+			uniform mat4 modelViewMatrix;
+			uniform mat4 perspectiveMatrix;
+
+ 			void main(void) {
+				gl_Position = perspectiveMatrix * modelViewMatrix * vec4(vertexPosition, 1.0);
+			}	
+		</script>
 </head>
 
 <body>
@@ -30,6 +53,7 @@
     <!-- Add your site or application content here -->
     <!-- particles.js container -->
     <div id="particles-js"></div>
+  <!--  <canvas id="webGLCanvas"></canvas>-->
     <!-- stats - count particles -->
     <img src="img/11059290_10207333283037329_3958349475068952777_n.jpg" class="img-circle profile-image animated">
     <div class="panel-grid">
@@ -62,6 +86,70 @@
             </ul>
         </div>
     </div>
+    <div class="bounce">
+    <div class="bg plastic"></div>
+    <div style="opacity: 0; display: none;" class="bg"></div>
+    <div style="opacity: 1;" class="intro-text fade">
+        <p>Bounce balls with your microphone!</p>
+        <p>A fun way to visualize music or monitor sounds.</p>
+        <p class="description">Get kids to experiment with these bouncing balls. Make all kinds of bouncy balls react to sounds from your microphone. A great sound/noise monitor for classrooms and a fun way to visualize music.</p>
+    </div>
+
+    <div class="stage plastic">
+       
+    </div>
+
+    <div style="opacity: 1; display: block;" class="intro-main fade">
+        <h1>Bouncy Balls</h1>
+        <div class="button">
+            <p>Begin bouncing!</p>
+        </div>
+    </div>
+    <h2 class="neave notranslate"><a href="http://neave.com/"><span>Made by Neave</span></a></h2>
+    <form class="menu hidden">
+        <div class="toggle">
+            <div></div>
+        </div>
+        <fieldset>
+            <div class="menu-mic">
+                <h2>Microphone</h2>
+                <div class="mic off"></div>
+            </div>
+            <div class="menu-total">
+                <h2>Total</h2>
+                <div class="range">
+                    <div class="track"></div>
+                    <div style="transform: translate3d(75px, 0px, 0px);" class="thumb"></div>
+                </div>
+            </div>
+            <div class="menu-mode">
+                <h2>Mode</h2>
+                <input name="mode" id="plastic" checked="checked" type="radio">
+                <label for="plastic">Plastic</label>
+                <input name="mode" id="emoji" type="radio">
+                <label class="emoji" for="emoji">Emoji</label>
+                <input name="mode" id="bubbles" type="radio">
+                <label for="bubbles">Bubbles</label>
+                <input name="mode" id="eyes" type="radio">
+                <label for="eyes">Eyeballs</label>
+            </div>
+            <div class="menu-speed">
+                <h2>Slow-Mo</h2>
+                <div class="checkbox">
+                    <input name="speed" id="speed" type="checkbox">
+                    <label for="speed"></label>
+                </div>
+            </div>
+            <div class="menu-fullscreen">
+                <h2>Full Screen</h2>
+                <div class="checkbox">
+                    <input name="fullscreen" id="fullscreen" type="checkbox">
+                    <label for="fullscreen"></label>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -74,6 +162,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/app.js"></script>
 
 
  <script>
