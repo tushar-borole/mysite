@@ -171,12 +171,12 @@ function resize() {
         at: "center",
         of: $(window)
     });
-    var windowHeight = $(window).height();
+   /* var windowHeight = $(window).height();
     var windowWidth = $(window).width();
     $("body").height(windowHeight)
     $("body").width(windowWidth)
     $("#particles-js").height(windowHeight)
-    $("#particles-js").width(windowWidth)
+    $("#particles-js").width(windowWidth)*/
 }
 resize()
 $(window).resize(function () {
@@ -189,3 +189,12 @@ $( ".profile-image" ).mouseenter(function() {
 $( ".profile-image" ).mouseleave(function() {
   $(this).removeClass( "jello" );
 });
+
+
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+  /* your code here */
+     console.log('You are using a mobile device!');
+    $("body").addClass("mobile")
+}
