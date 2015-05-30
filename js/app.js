@@ -16,7 +16,7 @@
 
         function c(a) {
             var b = new Image;
-            b.src = "/assets/images/" + a
+            b.src = "/img/" + a
         }
         window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.msRequestAnimationFrame || function (a) {
             setTimeout(a, 1e3 / 60)
