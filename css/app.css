@@ -54,7 +54,7 @@ fieldset {
     height: 100%;
     color: #fff;
     outline: 0;
-    background-image: url(/assets/images/neave-icon.svg);
+    background-image: url(../img/neave-icon.svg);
     background-size: 100% 100%;
     -webkit-border-radius: 50%;
     border-radius: 50%
@@ -191,7 +191,7 @@ fieldset {
 
 .bg.bubbles {
     background-color: #020c55;
-    background-image: url(/assets/images/underwater.jpg);
+    background-image: url(../img/underwater.jpg);
     background-size: 1200px 700px;
     background-position: 50% 0;
     background-repeat: repeat-x
@@ -653,6 +653,6 @@ body.mobile {
         border-width: 1px
     }
     .emoji .ball {
-        background-image: url(/assets/images/emoji-2x.jpg)
+        background-image: url(../img/emoji-2x.jpg)
     }
 }
