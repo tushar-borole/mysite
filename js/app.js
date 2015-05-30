@@ -76,6 +76,7 @@
                             transform: "transform"
                         };
                     document.body.insertBefore(b, null);
+                    console.log(c)
                     for (var d in c) void 0 !== b.style[d] && (b.style[d] = "translate3d(1px,1px,1px)", a = window.getComputedStyle(b).getPropertyValue(c[d]));
                     return document.body.removeChild(b), void 0 !== a && a.length > 0 && "none" !== a
                 }
@@ -310,6 +311,7 @@
                 }
 
                 function p(a, b, c) {
+                  
                     c = c && !h.isMobile;
                     for (var d = 50; d;) {
                         var e = Math.random() * (i.width - 2 * b) + b,
@@ -406,6 +408,7 @@
                 }, C.swapMode = function (b) {
                     C.useSlowSpeed(!1), y && E ? (C.bounceBalls(20 * h.getGravity()), z = b, L = 0, E = h.isMobile, k.swap(y), h.isMobile && setTimeout(a, 20, b, !0)) : a(b, !1)
                 }, C.setTotal = function (a) {
+                    console.log(a)
                     C.swapMode(y), L = a
                 }, C.bounceBalls = function (a) {
                     if (a && E) {
@@ -549,6 +552,7 @@
                 }
 
                 function j(a) {
+                    console
                     if (M && y) {
                         var c = y.getBoundingClientRect();
                         if (c && c.left) {
