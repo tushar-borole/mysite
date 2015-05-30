@@ -1,4 +1,7 @@
-/*! Copyright (C) Neave Interactive, neave.com */ ! function (a, b, c, d, e, f, g) {
+/*! Copyright (C) Neave Interactive, neave.com */
+var ballCount=5;
+
+! function (a, b, c, d, e, f, g) {
     a.GoogleAnalyticsObject = e, a[e] = a[e] || function () {
         (a[e].q = a[e].q || []).push(arguments)
     }, a[e].l = 1 * new Date, f = b.createElement(c), g = b.getElementsByTagName(c)[0], f.async = 1, f.src = d, g.parentNode.insertBefore(f, g)
@@ -346,7 +349,8 @@
                         L || (K = q(c / 12)), H.min = 600 > c ? 6 : 4, H.max = Math.clamp(K / 1.2, 45, 80), h.setGravity(2);
                         break;
                     case "emoji":
-                        L || (K = q(800 > c ? 25 : c / 16)), H.min = H.max = 800 > c ? 25 : 35, h.setGravity(1.5);
+                            console.log(c)
+                        L || (K = ballCount), H.min = H.max = 800 > c ? 25 : 35, h.setGravity(1.5);
                         break;
                     case "bubbles":
                         L || (K = q(c / 12)), H.min = 4, H.max = Math.clamp(K / 1.1, 60, 100), h.setGravity(-.75), d = 4;
