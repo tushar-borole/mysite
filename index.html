@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+       <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -21,28 +21,6 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    	<script id="shader-fs" type="x-shader/x-fragment">
-				#ifdef GL_ES
-				  precision highp float;
-				  #endif
-				  
-				 uniform vec4 color;
-				 
-    		void main(void) {
-    		 gl_FragColor = color;
-    		}
-		</script>
-		
-		<script id="shader-vs" type="x-shader/x-vertex">
-  			attribute vec3 vertexPosition;
-
-			uniform mat4 modelViewMatrix;
-			uniform mat4 perspectiveMatrix;
-
- 			void main(void) {
-				gl_Position = perspectiveMatrix * modelViewMatrix * vec4(vertexPosition, 1.0);
-			}	
-		</script>
 </head>
 
 <body>
