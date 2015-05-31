@@ -136,7 +136,21 @@ gridster = $(".gridster ul").gridster({
         }
     }
 }).data('gridster')
-$(".gridster").removeClass("hidden")
+
+
+
+
+$('.gridster li img').waitForImages(true).done(function () {
+    $(".gridster").removeClass("hidden")
+    $(".gridster li")
+        .velocity("transition.bounceIn", {
+            stagger: 250,
+            complete: function () {
+                $('.gridster li').removeAttr("style");
+            }
+        })
+        .delay(750)
+});;
 
 $(".gridster ul li").click(function () {
 
@@ -171,30 +185,30 @@ function resize() {
         at: "center",
         of: $(window)
     });
-   /* var windowHeight = $(window).height();
-    var windowWidth = $(window).width();
-    $("body").height(windowHeight)
-    $("body").width(windowWidth)
-    $("#particles-js").height(windowHeight)
-    $("#particles-js").width(windowWidth)*/
+    /* var windowHeight = $(window).height();
+     var windowWidth = $(window).width();
+     $("body").height(windowHeight)
+     $("body").width(windowWidth)
+     $("#particles-js").height(windowHeight)
+     $("#particles-js").width(windowWidth)*/
 }
 resize()
 $(window).resize(function () {
     resize()
 });
 
-$( ".profile-image" ).mouseenter(function() {
-  $(this).addClass( "jello" );
+$(".profile-image").mouseenter(function () {
+    $(this).addClass("jello");
 });
-$( ".profile-image" ).mouseleave(function() {
-  $(this).removeClass( "jello" );
+$(".profile-image").mouseleave(function () {
+    $(this).removeClass("jello");
 });
 
 
 
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (isMobile) {
-  /* your code here */
-     console.log('You are using a mobile device!');
+    /* your code here */
+    console.log('You are using a mobile device!');
     $("body").addClass("mobile")
 }
