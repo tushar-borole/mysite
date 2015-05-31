@@ -144,7 +144,7 @@ $('.gridster li img').waitForImages(true).done(function () {
     $(".gridster").removeClass("hidden")
     $(".gridster li")
         .velocity("transition.bounceIn", {
-            stagger: 250,
+            stagger: 500,
             complete: function () {
                 $('.gridster li').removeAttr("style");
             }
