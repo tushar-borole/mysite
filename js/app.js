@@ -179,7 +179,7 @@ var ballCount=5;
                 }, j.hide = function () {
                     e && (e(".stage").style.display = "none")
                 }, j.init = function () {
-                    k || (k = !0, i = e(".stage"), i && (i.on("mousedown", c, !1), i.on("mousemove", d, !1), i.on("mouseup", f, !1), i.on("mouseleave", f, !1), i.on("contextmenu", a, !1), i.on("touchstart", g, !1), i.on("touchmove", h, !1), i.on("touchend", f, !1), i.on("touchcancel", f, !1)))
+                    k || (k = !0, i = e("body"), i && (i.on("mousedown", c, !1), i.on("mousemove", d, !1), i.on("mouseup", f, !1), i.on("mouseleave", f, !1), i.on("contextmenu", a, !1), i.on("touchstart", g, !1), i.on("touchmove", h, !1), i.on("touchend", f, !1), i.on("touchcancel", f, !1)))
                 }, j
             }(),
             j = function () {
