@@ -153,7 +153,7 @@ $('.gridster li img').waitForImages(true).done(function () {
 });;
 
 $(".gridster ul li").on('touchstart click', function(e){
-    e.stopPropagation(); e.preventDefault();
+  
 
     var attribute = $(this).attr("type")
 
