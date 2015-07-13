@@ -152,7 +152,8 @@ $('.gridster li img').waitForImages(true).done(function () {
         .delay(750)
 });;
 
-$(".gridster ul li").click(function () {
+$(".gridster ul li").on('touchstart click', function(e){
+    e.stopPropagation(); e.preventDefault();
 
     var attribute = $(this).attr("type")
 
