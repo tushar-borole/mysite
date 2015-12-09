@@ -152,7 +152,7 @@ $('.gridster li img').waitForImages(true).done(function () {
         .delay(750)
 });;
 
-$(".gridster ul li").on("tap",function(){
+$(".gridster ul li").on("tap click",function(){
 
     var attribute = $(this).attr("type")
 
