@@ -1,12 +1,9 @@
-
-
 fieldset {
     border: 1px solid silver;
     margin: 0 2px;
     padding: .35em .625em .75em;
     display: none;
 }
-
 
 @-webkit-keyframes neave-anim {
     to {
@@ -118,8 +115,6 @@ fieldset {
     cursor: -moz-grabbing;
     cursor: grabbing
 }
-
-
 
 .plastic .ball {
     background-image: -webkit-radial-gradient(50% 60%, circle closest-side, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, .2) 30%, rgba(255, 255, 255, .1) 80%, rgba(0, 0, 0, .2) 130%);
@@ -653,4 +648,58 @@ body.mobile {
     .emoji .ball {
         background-image: url(../img/emoji-2x.jpg)
     }
+}
+
+.name-content {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    color: #fff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    min-height: 215px;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: #000 0px 2px 4px;
+    text-align: center;
+      margin-bottom: 0;
+}
+
+.name-content .my-name {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+
+.sub-tagline {
+    margin: 0;
+    font-size: 21px;
+}
+
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+#typed{
+    color:#FFEB3B;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
