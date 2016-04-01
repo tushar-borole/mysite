@@ -663,7 +663,7 @@ body.mobile {
     font-size: 2em;
     text-shadow: #000 0px 2px 4px;
     text-align: center;
-      margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .name-content .my-name {
@@ -671,35 +671,65 @@ body.mobile {
     font-weight: 600;
 }
 
-
 .sub-tagline {
     margin: 0;
     font-size: 21px;
 }
 
-
-
-.typed-cursor{
+.typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-#typed{
-    color:#FFEB3B;
+
+#typed {
+    color: #FFEB3B;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+    .name-content {
+        display: block !important;
+        text-align: right;
+        padding-right: 6px;
+    }
+    .sub-tagline {
+        font-size: 19px;
+    }
 }
