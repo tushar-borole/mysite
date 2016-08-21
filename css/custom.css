@@ -1,0 +1,12 @@
+.profile_pic{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: inline-block;
+    text-align: center;
+}
+
+.profile_pic img {
+    height: 115px;
+    border-radius: 59px;
+}
