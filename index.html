@@ -1,173 +1,385 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-       <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Material UI One Page Theme</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bower_components/gridster/dist/jquery.gridster.min.css">
-    <link rel="stylesheet" href="bower_components/hover/css/hover-min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/app.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
 </head>
+<body id="top" class="scrollspy">
 
-<body>
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-<div class="name-content">
-    <h1 class="my-name">I'm Tushar.</h1>
-    <h4 class="sub-tagline">I write code in <span id="typed"></span></h4>
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+            <a href="#" id="logo-container" class="brand-logo">Tushar Borole</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#intro">Service</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/joashp/material-design-template" target="_blank">Download</a></li>
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Hero-->
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <div class="profile_pic">
+        <img src="img/profile_pic.jpg"/>
+        </div>
+        <h1 class="text_h center header cd-headline letters type">
+            <span>I write code in </span> 
+            <span class="cd-words-wrapper waiting">
+                <br>
+                <b class="is-visible">Javascript</b>
+                <b>Python</b>
+                <b>AngularJS</b>
+                <b>HTML</b>
+                <b>CSS</b>
+            </span>
+        </h1>
     </div>
-    <!-- Add your site or application content here -->
-    <!-- particles.js container -->
-    <div id="particles-js"></div>
-  <!--  <canvas id="webGLCanvas"></canvas>-->
-    <!-- stats - count particles -->
-    <img src="img/11059290_10207333283037329_3958349475068952777_n.jpg" class="img-circle profile-image animated">
-    <iframe src="http://githubbadge.appspot.com/tushariscoolster" class="visible-lg-block visible-sm-block visible-md-block" style="border: 0px none; height: 142px; width: 200px; overflow: hidden; z-index: 999999; position: absolute; right: 0px;top:5px" frameBorder="0"></iframe>
-    <div class="panel-grid">
-        <div class="gridster hidden">
-            <ul>
-                <li type="github" class="github hvr-shrink" data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-                    <img src="img/github-logo-transparent.jpg">
-                </li>
-                <li type="blog" class="aboutme hvr-shrink" data-row="1" data-col="2" data-sizex="2" data-sizey="1">
-                    <img src="img/blog-pic-b2c.jpg">
-
-                </li>
-
-
-                <li data-row="2" data-col="1" data-sizex="1" class="hvr-shrink" data-sizey="1"><img src="img/About.me_icon.jpg">
-                </li>
-                <li type="facebook" data-row="2" class="hvr-shrink"  data-col="2" data-sizex="1" data-sizey="1"><img src="img/facebook.png">
-                </li>
-                <li data-row="2" data-col="3" data-sizex="1" class="hvr-shrink"  data-sizey="1"><img src="img/Contacts.png">
-                </li>
-
-                <li class="hvr-shrink"  type="linkedin" data-row="3" data-col="1" data-sizex="1" data-sizey="1"><img src="img/linkedin-icon.png">
-                </li>
-                <li data-row="3" class="hvr-shrink"  data-col="2" data-sizex="1" data-sizey="1"><img src="img/Worker-Icon.jpg">
-                </li>
-                <li type="twitter" data-row="3" class="hvr-shrink"  data-col="3" data-sizex="1" data-sizey="1"><img src="img/twitter-logo-transparent_5615_1.jpg">
-                </li>
-            </ul>
+</div>
+    
+    
+<div class="section scrollspy section1" style="background: rgb(247, 247, 247) none repeat scroll 0px 0px;" id="education">
+    <div class="container">
+        <h2 class="header text_b">Education </h2>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card small">
+              <div class="card-image">
+                <img src="img/uis.jpg">
+              </div>
+              <div class="card-content">
+                 <h5 class="promo-caption center-align">Master Of Science - Computer Science</h5>
+                   <p class="promo-caption center-align">University Of Illinois at Springfield
+                            <br>Springfield, IL, USA
+                            <br>[DEC '15 - Dec '16]</p>
+              </div>
+              <div class="card-action">
+                <a target="_blank"  href="http://www.uis.edu/" class="btn waves-effect waves-light color-white red darken-1">Go to website</a>
+              
+              </div>
+            </div>
+          </div>
+            <div class="col s12 m6">
+            <div class="card small">
+              <div class="card-image">
+                <img src="img/university%20of%20mumbai.png">
+              </div>
+              <div class="card-content">
+                <h5 class="promo-caption center-align">Bachelor - Computer Science</h5>
+                  <p class="promo-caption center-align">University Of Mumbai
+                            <br>Mumbai, MH, INDIA
+                            <br>[MAY '08 - MAY '12]</p>
+              </div>
+              <div class="card-action">
+                 <a target="_blank" href="http://www.mu.ac.in" class="btn waves-effect waves-light red darken-1 color-white">Go to website</a>
+              
+              </div>
+            </div>
+          </div>
+        
         </div>
     </div>
-    <div class="bounce">
-    <div class="bg plastic"></div>
-    <div style="opacity: 0; display: none;" class="bg"></div>
-    <div style="opacity: 1;" class="intro-text fade">
+    </div>
+
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy">
+    <div class="container">
+        <div class="row">
+            <div  class="col s12">
+                <h2 class="center header text_h2"> I have 3 years experience as a <span class="span_h2"> Web Developer  </span>and lots of experience in the <span class="span_h2"> Javascript and python</span> Programming </h2>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
     
+    
+<div class="section scrollspy section1" style="background: rgb(247, 247, 247) none repeat scroll 0px 0px;" id="experience">
+    <div class="container">
+        <h2 class="header text_b">Experience </h2>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card small">
+              <div class="card-image">
+                <img src="img/nisos.png">
+              </div>
+              <div class="card-content">
+                 <h5 class="promo-caption center-align">Nisos Technologies</h5>
+                   <p class="promo-caption center-align">Software Developer
+                            <br>Mumbai, MH, INDIA
+                            <br>[DEC '15 - Dec '16]</p>
+              </div>
+              <div class="card-action">
+                <a target="_blank"  href="https://nisostech.com/" class="btn waves-effect waves-light color-white red darken-1">Go to website</a>
+              
+              </div>
+            </div>
+          </div>
+            <div class="col s12 m6">
+            <div class="card small">
+              <div class="card-image">
+                <img src="img/ilminnovates.jpg">
+              </div>
+              <div class="card-content">
+                <h5 class="promo-caption center-align">ILM Innovates</h5>
+                  <p class="promo-caption center-align">UI Developer
+                            <br>Mumbai, MH, INDIA
+                            <br>[MAY '08 - MAY '12]</p>
+              </div>
+              <div class="card-action">
+                 <a target="_blank" href="http://www.ilminnovates.com/" class="btn waves-effect waves-light red darken-1 color-white">Go to website</a>
+              
+              </div>
+            </div>
+          </div>
+        
+        </div>
+    </div>
     </div>
 
-    <div class="stage plastic">
-       
-    </div>
 
-    <div style="opacity: 1; display: block;" class="intro-main fade">
-        <h1></h1>
-        <div class="button">
+    <!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/parallax1.png"></div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header text_b">Projects </h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">white label email marketing platform <i class="mdi-navigation-more-vert right"></i></span>
+                       <!-- <p><a href="#">Project link</a></p>-->
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            
+             
+            
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project2.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Ecommerce Platform Footwear Company <i class="mdi-navigation-more-vert right"></i></span>
+                        <!--<p><a href="#">Project link</a></p>-->
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project3.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Non-Profit Business Management Portal <i class="mdi-navigation-more-vert right"></i></span>
+                    <!--    <p><a href="#">Project link</a></p>-->
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project4.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Social Networking Platform<i class="mdi-navigation-more-vert right"></i></span>
+                      <!--  <p><a href="#">Project link</a></p>-->
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project5.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Mobile app for niche social network <i class="mdi-navigation-more-vert right"></i></span>
+                     <!--   <p><a href="#">Project link</a></p>-->
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/project6.jpeg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Mobile app for a spiritual practice<i class="mdi-navigation-more-vert right"></i></span>
+                        <!--<p><a href="#">Project link</a></p>-->
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
+                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Parallax-->
+<div class="parallax-container">
+    <div class="parallax"><img src="img/parallax1.png"></div>
+</div>
+
+<!--Team-->
+<div class="section scrollspy" id="team">
+    <div class="container">
+        <h2 class="header text_b"> Open Source Contribution </h2>
+        <div class="row">
+            <div class="col s12 m4">
+              
+                   <div data-height="400" class="github-card" data-github="tushariscoolster/ng-sweet-alert"  data-theme="medium"></div>
+           
+            </div>
+             <div class="col s12 m4">
+              
+                   <div data-height="400" class="github-card" data-github="tushariscoolster/code-challenges"  data-theme="medium"></div>
+           
+            </div>
+             <div class="col s12 m4">
+              
+                   <div data-height="400" class="github-card" data-github="tushariscoolster/macha.css"  data-theme="medium"></div>
+           
+            </div>
            
         </div>
     </div>
-    <form class="menu hidden">
-        <div class="toggle">
-            <div></div>
+</div>
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+    <div class="container">  
+        <div class="row">
+            <div class="col l6 s12">
+                <form class="col s12" action="contact.php" method="post">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="mdi-action-account-circle prefix white-text"></i>
+                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <label for="icon_prefix" class="white-text">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi-communication-email prefix white-text"></i>
+                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <label for="icon_email" class="white-text">Email-id</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="mdi-editor-mode-edit prefix white-text"></i>
+                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                            <label for="icon_prefix2" class="white-text">Message</label>
+                        </div>
+                        <div class="col offset-s7 s5">
+                            <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">tusharborole.com</h5>
+                <ul>
+                    <li><a class="white-text" href="http://www.tusharborole.com/">Home</a></li>
+                    <li><a class="white-text" href="http://www.tusharborole.com/blog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Social</h5>
+                <ul>
+                    
+                    <li>
+                        <a class="white-text" target="_blank" href="https://www.facebook.com/tusharborole">
+                            <i class="small fa fa-facebook-square white-text"></i> Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" target="_blank" href="https://github.com/tusahriscoolster">
+                            <i class="small fa fa-github-square white-text"></i> Github
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text"  target="_blank" href="https://www.linkedin.com/in/tusharborole">
+                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <fieldset>
-            <div class="menu-mic">
-                <h2>Microphone</h2>
-                <div class="mic off"></div>
-            </div>
-            <div class="menu-total">
-                <h2>Total</h2>
-                <div class="range">
-                    <div class="track"></div>
-                    <div style="transform: translate3d(75px, 0px, 0px);" class="thumb"></div>
-                </div>
-            </div>
-            <div class="menu-mode">
-                <h2>Mode</h2>
-                <input name="mode" id="plastic" checked="checked" type="radio">
-                <label for="plastic">Plastic</label>
-                <input name="mode" id="emoji" type="radio">
-                <label class="emoji" for="emoji">Emoji</label>
-                <input name="mode" id="bubbles" type="radio">
-                <label for="bubbles">Bubbles</label>
-                <input name="mode" id="eyes" type="radio">
-                <label for="eyes">Eyeballs</label>
-            </div>
-            <div class="menu-speed">
-                <h2>Slow-Mo</h2>
-                <div class="checkbox">
-                    <input name="speed" id="speed" type="checkbox">
-                    <label for="speed"></label>
-                </div>
-            </div>
-            <div class="menu-fullscreen">
-                <h2>Full Screen</h2>
-                <div class="checkbox">
-                    <input name="fullscreen" id="fullscreen" type="checkbox">
-                    <label for="fullscreen"></label>
-                </div>
-            </div>
-        </fieldset>
-    </form>
     </div>
+    <div class="footer-copyright default_color">
+        <div class="container">
+            Made by <a class="white-text" href="http://www.tusharborole.com">Tushar Borole</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
+        </div>
+    </div>
+</footer>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
-    </script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src="bower_components/particles.js/particles.min.js"></script>
-    <script src="bower_components/gridster/dist/jquery.gridster.min.js"></script>
-    <script src="bower_components/jqueryui/ui/minified/position.min.js"></script>
-    <script src="bower_components/velocity/velocity.min.js"></script>
-    <script src="bower_components/velocity/velocity.ui.min.js"></script>
-    <script src="bower_components/waitForImages/dist/jquery.waitforimages.min.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/app.js"></script>
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+    <script src="http://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-
-    
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-70609640-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!-- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-63489144-1', 'auto');
-  ga('send', 'pageview');
-
-</script>-->
-</body>
-
+    </body>
 </html>
