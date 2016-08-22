@@ -10,3 +10,27 @@
     height: 115px;
     border-radius: 59px;
 }
+
+.section1 .card-image img{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: auto; 
+}
+
+.section1 .card.small .card-content{
+       height: auto;
+}
+
+.section1 .card-action{
+    position: relative!important
+    
+}
+
+.section1 .card.small {
+    height: auto;
+}
+.color-white{
+    color: #ffffff!important
+}
