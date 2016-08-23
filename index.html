@@ -13,6 +13,12 @@
     <link href="css/custom.css" type="text/css" rel="stylesheet">
     
     <script src="https://use.fontawesome.com/6abbbf15b0.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_99ywtNUnQZimPxaHisG6W");
+   })();
+</script>
 </head>
 <body id="top" class="scrollspy">
 
@@ -333,30 +339,30 @@
     <div class="container">  
         <div class="row">
             <div class="col l6 s12">
-                <form class="col s12" action="contact.php" method="post">
+                <div class="col s12">
                     <div class="row">
                         <div class="input-field col s6">
                             <i class="mdi-action-account-circle prefix white-text"></i>
-                            <input id="icon_prefix" name="name" type="text" class="validate white-text">
+                            <input id="icon_prefix" name="name" type="text" required class="validate white-text first_name">
                             <label for="icon_prefix" class="white-text">First Name</label>
                         </div>
                         <div class="input-field col s6">
                             <i class="mdi-communication-email prefix white-text"></i>
-                            <input id="icon_email" name="email" type="email" class="validate white-text">
+                            <input id="icon_email" name="email" type="email" required class="validate white-text">
                             <label for="icon_email" class="white-text">Email-id</label>
                         </div>
                         <div class="input-field col s12">
                             <i class="mdi-editor-mode-edit prefix white-text"></i>
-                            <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+                            <textarea id="icon_prefix2" name="message" required class="materialize-textarea white-text message_box"></textarea>
                             <label for="icon_prefix2" class="white-text">Message</label>
                         </div>
                         <div class="col offset-s7 s5">
-                            <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
+                            <button id="submit_button" class="btn waves-effect waves-light red darken-1">Submit
                                 <i class="mdi-content-send right white-text"></i>
                             </button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">tusharborole.com</h5>
@@ -400,6 +406,23 @@
     <script src="min/plugin-min.js"></script>
     <script src="min/custom-min.js"></script>
     <script src="http://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+    <script type="application/javascript">
+    
+       
+      
+    $("#submit_button").click(function(){
+     
+        
+       // parameters: service_id, template_id, template_parameters
+emailjs.send("yahoo","template_21vaAaDA",{name: $(".first_name").val(), notes:$(".message_box").val()})
+.then(function(response) {
+   Materialize.toast('I will contact you shortly', 4000) 
+}, function(err) {
+   console.log("FAILED. error=", err);
+});
+        
+    })  
+    </script>
 
     </body>
 </html>

@@ -263,6 +263,7 @@
 		e.target.style['visibility'] = 'hidden';
 		e.target.style['zIndex'] = 2;
 	}
+ 
 
 	// [].forEach.call(card, function(card) {
 	// 	card.addEventListener('click', scaleCard, false);
