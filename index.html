@@ -354,7 +354,7 @@
                         </div>
                         <div class="input-field col s6">
                             <i class="mdi-communication-email prefix white-text"></i>
-                            <input id="icon_email" name="email" type="email" required class="validate white-text">
+                            <input id="icon_email" name="email" type="email" required class="validate white-text email_message">
                             <label for="icon_email" class="white-text">Email-id</label>
                         </div>
                         <div class="input-field col s12">
@@ -423,7 +423,7 @@
      
         
        // parameters: service_id, template_id, template_parameters
-emailjs.send("yahoo","template_21vaAaDA",{name: $(".first_name").val(), notes:$(".message_box").val()})
+emailjs.send("yahoo","template_21vaAaDA",{from_name: $(".first_name").val(),email_message:$(".email_message").val(), message_html:$(".message_box").val()})
 .then(function(response) {
    Materialize.toast('I will contact you shortly', 4000) 
 }, function(err) {
