@@ -25,12 +25,14 @@
 	
 
 	function initHeadline() {
+        
 		singleLetters($('.cd-headline.letters').find('b'));
 		animateHeadline($('.cd-headline'));
 	}
 
 	function singleLetters($words) {
 		$words.each(function(){
+            
 			var word = $(this),
 				letters = word.text().split(''),
 				selected = word.hasClass('is-visible');
@@ -40,6 +42,7 @@
 			}
 		    var newLetters = letters.join('');
 		    word.html(newLetters).css('opacity', 1);
+            
 		});
 	}
 
