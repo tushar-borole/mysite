@@ -11,6 +11,7 @@
     <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link href="css/animate.min.css" type="text/css" rel="stylesheet">
     
     <script src="https://use.fontawesome.com/6abbbf15b0.js"></script>
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -149,7 +150,7 @@
                  <h5 class="promo-caption center-align">Nisos Technologies</h5>
                    <p class="promo-caption center-align">Software Developer
                             <br>Mumbai, MH, INDIA
-                            <br>[DEC '15 - Dec '16]</p>
+                            <br>[JAN '14 - Dec '15]</p>
               </div>
               <div class="card-action">
                 <a target="_blank"  href="https://nisostech.com/" class="btn waves-effect waves-light color-white red darken-1">Go to website</a>
@@ -166,7 +167,7 @@
                 <h5 class="promo-caption center-align">ILM Innovates</h5>
                   <p class="promo-caption center-align">UI Developer
                             <br>Mumbai, MH, INDIA
-                            <br>[MAY '08 - MAY '12]</p>
+                            <br>[OCT '12 - NOV '13]</p>
               </div>
               <div class="card-action">
                  <a target="_blank" href="http://www.ilminnovates.com/" class="btn waves-effect waves-light red darken-1 color-white">Go to website</a>
@@ -408,8 +409,10 @@
     <script src="http://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     <script type="application/javascript">
     
-       
-      
+       $(document).ready(function(){
+           
+           $('.profile_pic').addClass('animated zoomIn');
+              
     $("#submit_button").click(function(){
      
         
@@ -421,7 +424,9 @@ emailjs.send("yahoo","template_21vaAaDA",{name: $(".first_name").val(), notes:$(
    console.log("FAILED. error=", err);
 });
         
-    })  
+    }) 
+       })
+    
     </script>
 
     </body>
